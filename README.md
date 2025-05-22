@@ -42,4 +42,5 @@ bash : python manage.py runserver 0.0.0.0:8000
 http://192.168.56.10:8000
 
 📄 Licença:
+
 Este projeto está sob a licença MIT.
