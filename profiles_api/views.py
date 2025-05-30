@@ -105,7 +105,11 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = models.UserProfile.objects.all()
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.UpdateOwnProfile,)
-    filter_backends = (filters.SearchFilter,)
-    search_fields = ('name', 'email',)
+    filter_backends = (filters.SearchFilter,) # filtro
+    search_fields = ('name', 'email',) # campos de busca
 
+
+class UserLoginApiView(ObtainAuthToken):
+    """Handle creating user authentication tokens"""
+    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES # configuração padrão de renderização
  
