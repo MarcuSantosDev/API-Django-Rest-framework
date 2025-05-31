@@ -64,7 +64,7 @@ class ProfileFeedItem(models.Model): # Representa uma atualização de status fe
         on_delete=models.CASCADE
     )
     status_text = models.CharField(max_length=255)
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True) # Cria uma data e hora de criação automaticamente
 
     def __str__(self):
         """Return the model as a string"""
