@@ -5,7 +5,7 @@ from django.contrib.auth.models import BaseUserManager
 from django.conf import settings
 
 
-class UserProfileManager(BaseUserManager):
+class UserProfileManager(BaseUserManager): # Representa um gerenciador de usuários
     """Manager for user profiles"""
 
     def create_user(self, email, name, password=None):
@@ -32,7 +32,7 @@ class UserProfileManager(BaseUserManager):
         return user
 
 
-class UserProfile(AbstractBaseUser, PermissionsMixin):
+class UserProfile(AbstractBaseUser, PermissionsMixin): # Representa um usuário no sistema
     """Database model for users in the system"""
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
@@ -57,9 +57,9 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         return self.email
 
 
-class ProfileFeedItem(models.Model):
+class ProfileFeedItem(models.Model): # Representa uma atualização de status feita por um usuário
     """Profile status update"""
-    user_profile = models.ForeignKey(
+    user_profile = models.ForeignKey( # Cria uma chave estrangeira (ForeignKey) ligando cada item de feed a um usuário.
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE
     )
