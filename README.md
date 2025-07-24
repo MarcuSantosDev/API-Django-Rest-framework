@@ -24,7 +24,7 @@ O projeto está configurado para rodar dentro de um ambiente virtualizado usando
 
 1️⃣ Suba a máquina virtual com Vagrant:
 
-bash : vagrant up
+bash : vagrant up (É Preciso ter o vagrant instalado !)
 
 2️⃣ Acesse o ambiente Vagrant:
 bash : vagrant ssh
