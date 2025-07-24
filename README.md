@@ -12,7 +12,7 @@ O projeto está configurado para rodar dentro de um ambiente virtualizado usando
 
 ⚙️ Tecnologias Utilizadas:
 
-- 🐍 Python
+- 🐍 Python 3.10.0
 - 🌐 Django
 - 🔗 Django Rest Framework
 - 📦 Vagrant (virtualização)
