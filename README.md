@@ -39,8 +39,9 @@ bash : source ~/envs/django_rest/venv/bin/activate
 bash : python manage.py runserver 0.0.0.0:8000 --noreload
 
 6️⃣ Acesse a API no navegador ou via ferramentas como Postman:
-http://192.168.56.10:8000
+exemplo : http://192.168.56.10:8000
 
 📄 Licença:
 
 Este projeto está sob a licença MIT.
+
